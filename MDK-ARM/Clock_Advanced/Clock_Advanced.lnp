@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"clock_advanced\startup_stm32f103xb.o"
+"clock_advanced\main.o"
+"clock_advanced\stm32f1xx_it.o"
+"clock_advanced\stm32f1xx_hal_msp.o"
+"clock_advanced\stm32f1xx_hal_gpio_ex.o"
+"clock_advanced\stm32f1xx_hal_i2c.o"
+"clock_advanced\stm32f1xx_hal.o"
+"clock_advanced\stm32f1xx_hal_rcc.o"
+"clock_advanced\stm32f1xx_hal_rcc_ex.o"
+"clock_advanced\stm32f1xx_hal_gpio.o"
+"clock_advanced\stm32f1xx_hal_dma.o"
+"clock_advanced\stm32f1xx_hal_cortex.o"
+"clock_advanced\stm32f1xx_hal_pwr.o"
+"clock_advanced\stm32f1xx_hal_flash.o"
+"clock_advanced\stm32f1xx_hal_flash_ex.o"
+"clock_advanced\stm32f1xx_hal_exti.o"
+"clock_advanced\stm32f1xx_hal_tim.o"
+"clock_advanced\stm32f1xx_hal_tim_ex.o"
+"clock_advanced\system_stm32f1xx.o"
+"clock_advanced\rtc.o"
+"clock_advanced\liquidcrystal_i2c.o"
+"clock_advanced\button.o"
+--strict --scatter "Clock_Advanced\Clock_Advanced.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Clock_Advanced.map" -o Clock_Advanced\Clock_Advanced.axf
